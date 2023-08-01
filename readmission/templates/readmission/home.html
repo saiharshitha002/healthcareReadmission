@@ -1,0 +1,193 @@
+
+{% extends 'readmission/base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url({% static 'readmission/img/slide/slide-1.jpg' %})">
+          <div class="container">
+            <h2>Welcome to<span> CodeCrafters</span></h2>
+            <p>Welcome to our medical website! Your health is our priority, and we are here to provide you with reliable information, resources, and expert advice on various medical topics.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({% static 'readmission/img/slide/slide-2.jpg' %})">
+          <div class="container">
+            <h2>Healthcare At Your Fingertips</h2>
+            <p>The platform's goal is to make sure that everyone has the right to be healthy. They use the latest and best technology and have a team of dedicated experts. By using the platform with a simple touch, users can manage their own health and start a journey to become healthier and more connected with others.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url({% static 'readmission/img/slide/slide-3.jpg' %})">
+          <div class="container">
+            <h2>Join our platform and let's make a positive impact together!</h2>
+            <p>Explore our content and feel free to reach out if you have any questions or concerns. Remember, knowledge empowers you to take charge of your well-being!</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="fas fa-heartbeat"></i></div>
+              <h4 class="title"><a href=""> Diagnosis</a></h4>
+              <p class="description">Using advanced diagnostic tools and thorough assessments, we provide accurate and timely diagnoses to guide personalized treatment plans.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="fas fa-pills"></i></div>
+              <h4 class="title"><a href="">First Aid</a></h4>
+              <p class="description">Explore our comprehensive first aid guides and be prepared to act confidently during critical situations</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="fas fa-thermometer"></i></div>
+              <h4 class="title"><a href="">Telemedicine Consultation</a></h4>
+              <p class="description">Offer virtual consultations with healthcare professionals, enabling remote diagnosis and treatment.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="fas fa-dna"></i></div>
+              <h4 class="title"><a href="">Health Education and Resources</a></h4>
+              <p class="description">Offer informative articles and resources on various health topics to educate users about maintaining their well-being.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>In an emergency? Need help now?</h3>
+          <p> In an emergency situation, seeking help from trained health professionals is crucial to receive timely and appropriate medical attention. Call to our health professionals and make an immediate appointment. Make sure you follow their instructions and visit a nearby hospital.</p>
+          <a class="cta-btn scrollto" href="{% url 'services' %}">Make an Appointment</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Our mission is to empower individuals and communities to achieve and maintain optimal health and well-being through accessible, high-quality medical care and health information. </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="{% static 'readmission/img/about.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Empowering Your Health: Discover the Benefits of Our Dedication to Care</h3>
+            <p class="fst-italic">
+              At our website, we are committed to providing you with comprehensive and compassionate healthcare services.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i>Finding healthcare providers and facilities easily.</li>
+              <li><i class="bi bi-check-circle"></i>Online appointment booking for time-saving.</li>
+              <li><i class="bi bi-check-circle"></i>  Reputable medical websites prioritize user data security and privacy, ensuring a safe browsing experience.</li>
+            </ul>
+            <p>
+              In addition to our medical services, the healthcare website serves as a reliable health information hub. We believe that knowledge is the key to better health decisions, so we offer a wealth of accurate and up-to-date health information on our website. Our blog covers a wide range of health topics, empowering you to take charge of your health and lead a healthier life.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="fas fa-user-md"></i>
+              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+
+              <p><strong>Doctors</strong> Our skilled team of doctors, experts in a wide range of medical specialties, dedicated to providing exceptional care for your health needs</p>
+              <a href="#">Find out more &raquo;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="far fa-hospital"></i>
+              <span data-purecounter-start="0" data-purecounter-end="26" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Departments</strong> Multiple specialized departments offering a wide array of solutions tailored to address your unique health concerns.</p>
+              <a href="#">Find out more &raquo;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="fas fa-flask"></i>
+              <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Research Lab</strong> We are dedicated to pushing the boundaries of medical research to uncover new insights and solutions.</p>
+              <a href="#">Find out more &raquo;</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="fas fa-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Awards</strong> We are honored to have received awards and recognition from several prestigious institutions.</p>
+              <a href="#">Find out more &raquo;</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Features Section ======= -->
+
+  <!-- ======= Footer ======= -->
+{% endblock %}
